@@ -1,0 +1,5 @@
+/WEB-INF/classes/Bank/build.bat
+/WEB-INF/classes/Bank/javax.servlet.jar
+/WEB-INF/classes/Bank/org.apache.sling.commons.json-2.0.4-incubator.jar
+/WEB-INF/classes/Bank/*.class
+

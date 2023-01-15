@@ -1,0 +1,37 @@
+CREATE TABLE bank.admin (
+    name varchar(32),
+    password varchar(32),
+    Address varchar(32),
+	Phone varchar(32)
+);
+
+insert into bank.admin values('admin','admin','Hyd','');
+
+select * from bank.admin where name='admin' AND password='admin';
+
+drop table bank.newaccount;
+
+CREATE TABLE bank.newaccount (
+    Amount int,
+    Username varchar(32),
+    Password varchar(32),
+    RePassword varchar(32),
+    Address varchar(32),
+    Phone varchar(32),
+    id int(11) NOT NULL,
+    dob varchar(32),
+    lastname varchar(32),
+    Gender varchar(32),
+    
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE bank.newaccount AUTO_INCREMENT=1;
+
+ALTER TABLE `bank`.`newaccount` CHANGE COLUMN `id` `id` INT NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE bank.newaccount AUTO_INCREMENT = 1;
+
+select * from bank.newaccount;
+
+select * from bank.newaccount where id=1 and  Username= 'sona ' and Password = 'sona123';

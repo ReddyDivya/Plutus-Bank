@@ -1,0 +1,322 @@
+input{
+	border-radius:20px;
+	padding: 3px;
+}
+#DisplayPageBorder
+{
+	border:2px  solid orange;
+	width:99%;
+	height:auto;
+}
+
+#border
+{
+	margin-left:20%;
+}
+#Note{color:red;
+margin:3px;
+text-align:left;
+}
+
+a, #Admin_Icon, #UserLog_Icon, #Contact
+{
+	color:orange;
+}
+#myPic , #myWel
+{
+	border:2px  solid black;
+	margin-left:6%;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#Wel_Text
+{
+	margin-right:15%;
+	margin-left:10px;
+}
+h1{
+	color:orange;
+}
+#heading
+{
+color:Orange;
+font-family:"Courier New", Courier, mono;
+font-size:40px;
+font-weight:bolder;
+margin-top:15%;
+}
+
+#tablebody tr:nth-child(even)
+{
+background-color:#CCCCCC;
+}
+
+
+#tablebody tr:hover
+{background-color:#FFCC33;
+}
+#apanabnk
+{
+font-family:"Courier New", Courier, mono;
+font-size:16px;
+
+}
+#Admin_Login_Button
+{
+background-color:#FF9900;
+font-family:"Courier New", Courier, mono;
+font-size:24px;
+width:35%;
+height:25%;
+font-weight:bolder;
+}
+#Admin_Login_Button:hover
+{
+background-color:#FFFFFF;
+border:solid black;
+padding:2px;
+}
+#User_Login_Button
+{
+background-color:#FF9900;
+width:35%;
+height:30%;
+font-size:24px;
+font-family:"Courier New", Courier, mono;
+font-weight:bolder;
+}
+#User_Login_Button:hover
+{
+background-color:#FFFFFF;
+border:solid black;
+}
+
+.display 
+{
+	padding-top:10px;
+	padding-bottom:20px;
+	padding-right:5px;
+	padding-left:10px;
+	width:40%;
+}
+#formbody 
+{
+	padding-top:25px;
+	padding-bottom:20px;
+	padding-right:5px;
+	padding-left:10px;
+	width:35%;
+	color:#000000;
+	font-family:"Courier New", Courier, mono;
+}
+#AdminDetailsDiv
+{
+display:inline-flex;
+width:100%;
+font-family:"Courier New", Courier, mono;
+}
+#head12  #apanalogin
+{
+	width:100%;
+	height:40%;
+}
+tr:hover
+{
+background-color:#FFFFFF;
+}
+th
+{
+	background-color:orange;
+	color:white;
+	padding:10px;
+	
+	}
+td
+{
+	padding : 5px;
+	
+}
+.Abutton  , #Abutton_Logout
+{
+	width:16.4%;
+	margin-left:3;
+	float:left;
+	padding:0;
+	border:0;
+	font-family:inherit;
+	font-size:1em;
+	cursor:pointer;
+	background:orange;
+	color:white;
+	font-family:"Courier New", Courier, mono;
+	
+}
+#Abutton_Logout:hover
+{
+padding:1px;
+background-color:red;
+border:solid black;
+}
+.Abutton:visit
+{
+background-color:#0033CC;
+}
+.Abutton:hover
+{
+background-color:#FFFFFF;
+border:solid black;
+color:#000000;
+}
+.Abutton:active
+{
+background-color:#FF0000;
+}
+
+
+.ABbutton  , #ABbutton_Logout
+{
+	width:20%;
+	margin:0;
+	float:left;
+	padding:3px;
+	border:1;
+	font-family:inherit;
+	font-size:1em;
+	cursor:pointer;
+	background:orange;
+	color:white;
+
+}
+#ABbutton_Logout:hover
+{
+background-color:red;
+border:solid black;
+padding:1px;
+}
+.ABbutton:hover
+{
+background-color:#FFFFFF;
+color:black;
+padding:2px;
+border:solid black;
+}
+
+a{text-decoration:none;}
+a:active{color:green;}
+#tble
+{
+width:50%;
+height:auto;
+
+}
+
+#UpdateButtons 
+{
+	width:100%;
+	background:white;
+	color: black;
+}
+
+#UserDetailsButton
+{
+background-color:#FF9900;
+font-family:"Courier New", Courier, mono;
+font-size:20px;
+font-weight:bolder;
+height:30%;
+width:100%;
+}
+#UserDetailsButton:hover
+{
+background-color:#FFFFFF;
+border:solid black;
+width:100%;
+height:30%;
+}
+#UserDetailsButton:active
+{background-color:#FF0000;
+}
+#buttons
+{
+    width:100%;
+	background:white;
+	color: black;
+}
+
+.loginform
+{
+	width:50%;
+	border:2px  black;
+}
+#imgA
+{
+	margin:50px; 
+	margin-top:60px; 
+	width:40%;
+	height:50%;
+	display:inline-flex;
+}
+#link
+{
+	height:60%;
+	width:50%;
+}
+#page
+{
+	width:35%;
+	font-family:"Courier New", Courier, mono;
+}
+
+#Admin_Login_Form 
+{
+width:65%;
+font-family:"Courier New", Courier, mono;
+}
+
+#ADL
+{
+margin-left:10%;
+width:20%;
+font-family:"Courier New", Courier, mono;
+
+}
+#heading
+{	
+margin-left:10%;
+width:30%;
+font-family:"Courier New", Courier, mono;
+
+}
+#heading1
+{
+	margin-left:10%;
+	width:30%;
+	font-family:georgian;
+}
+#refresh
+{
+	margin-right30%;
+	margin-left:10%;
+}
+#display
+{
+width:35%;
+	
+}
+h1
+{
+	font-family:"Courier New", Courier, mono;
+	font-size:45px;
+}
+#Admin_Login_Form_Legend , #Admin_Comment_Form_Legend , #Admin_Details_Form_Legend,#UserLogin
+{
+font-family:"Courier New", Courier, mono;
+font-size:20px;
+font-weight:bolder;
+}
+#Manditory_Fields
+{
+color:red;
+}
+
+
