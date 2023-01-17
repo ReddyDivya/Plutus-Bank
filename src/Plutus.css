@@ -77,7 +77,7 @@
         flex-direction: column;
         justify-content: space-between;
         /* color: var(--c-text-tertiary); */
-        color: #B999BE;
+        color: #0e3b53;
     }
 
     .navbar a {
@@ -94,7 +94,7 @@
         line-height: 1.5;
         display: flex;
         /* color: var(--c-text-primary); */
-        color: #B999BE;
+        color: #1fa5ed;
     }
 
     .footer p {
@@ -103,12 +103,12 @@
 
     .footer div {
         /* border-top: 1px solid var(--c-gray-600); */
-        border-top: 1px solid #B999BE;
+        border-top: 1px solid #1fa5ed;
         margin-top: 1.5rem;
         padding-top: 1rem;
         font-size: 0.75rem;
         /* color: var(--c-text-tertiary); */
-        color: #B999BE;
+        color: #1fa5ed;
     }
 
     .db-header-logo {
@@ -117,7 +117,7 @@
         padding-bottom: 1rem;
         padding-top: 1rem;
         /* border-bottom: 1px solid var(--c-gray-600); */
-        border-bottom: 1px solid #B999BE;
+        border-bottom: 1px solid #1fa5ed;
     }
 
     .db-header-logo-icon {
@@ -128,7 +128,7 @@
         height: 50px;
         border-radius: 50%;
         /* border: 3px solid var(--c-gray-700); */
-        border: 3px solid #B999BE;
+        border: 3px solid #1fa5ed;
 
     }
 
@@ -143,17 +143,17 @@
         line-height: 1.25;
         margin-left: 0.75rem;
         /* color: var(--c-text-primary); */
-        color: 3px solid #B999BE;
+        color: 3px solid #1fa5ed;
     }
 
     .logo-title span:first-child {
         /* color: var(--c-text-primary); */
-        color: #B999BE;
+        color: #1fa5ed;
     }
 
     .logo-title span:last-child {
         /* color: var(--c-text-tertiary); */
-        color: #B999BE;
+        color: #1fa5ed;
         font-size: 12px;
     }
 
@@ -162,7 +162,7 @@
         flex-direction: column;
         align-items: flex-start;
         /* color: var(--c-text-tertiary); */
-        color: #B999BE;
+        color: #1fa5ed;
     }
 
     .db-header-navbar a {
@@ -182,16 +182,16 @@
     .db-header-navbar:focus {
         transform: translateX(4px);
         /* color: var(--c-text-primary); */
-        color: #B999BE;
+        color: #1fa5ed;
     }
 
     .db-header-navbar-tabs {
         display: flex;
         justify-content: space-between;
         color: var(--c-text-tertiary);
-        color: #B999BE;
+        color: #1fa5ed;
         /* border-bottom: 1px solid var(--c-gray-600); */
-        border-bottom: 1px solid #B999BE;
+        border-bottom: 1px solid #1fa5ed;
     }
 
     .db-header-navbar-tabs-icons {
@@ -201,7 +201,7 @@
         padding: 6px;
         margin-left: -6px;
         /* border: 3px solid var(--c-gray-700); */
-        border: 3px solid #B999BE;
+        border: 3px solid #1fa5ed;
     }
 
     .db-header-navbar-tabs a {
@@ -218,9 +218,9 @@
     a:hover,
     a:focus {
         /* color: var(--c-text-primary); */
-        color: #B999BE;
+        color: #1fa5ed;
         /* border-color: var(--c-text-primary); */
-        border-color: #B999BE;
+        border-color: #1fa5ed;
     }
 
 
@@ -281,7 +281,7 @@ a {
     background: transparent;
     cursor: pointer;
     /* color: var(--c-text-primary); */
-    color: #B999BE;
+    color: #1fa5ed;
     transition: 0.25s ease;
 }
 
@@ -295,7 +295,8 @@ a {
     font-size: 1.125rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--c-gray-600);
+    /* border-bottom: 1px solid var(--c-gray-600); */
+    border-bottom: 1px solid #1fa5ed;
     font-weight: 300;
 }
 
@@ -318,7 +319,8 @@ a {
     border-radius: 50%;
     border: 0;
     background-color: transparent;
-    color: var(--c-gray-900);
+    /* color: var(--c-gray-900); */
+    color: #1fa5ed;
     cursor: pointer;
 }
 
@@ -346,8 +348,10 @@ i {
 .tile {
     padding: 1rem;
     border-radius: 8px;
-    background-color: var(--c-olive-500);
-    color: var(--c-gray-900);
+    /* background-color: var(--c-olive-500); */
+    background-color: #98c5dd;
+    /* color: var(--c-gray-900); */
+    color: #0e3b53;
     min-height: 200px;
     height: 100px;
     display: flex;
@@ -358,7 +362,8 @@ i {
 }
 
 .tile:nth-child(2) {
-    background-color: var(--c-green-500);
+    /* background-color: var(--c-green-500); */
+    background-color: #98c5dd;
 }
 
 .tile:nth-child(3) {
