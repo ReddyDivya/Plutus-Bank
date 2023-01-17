@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Plutus</title>
 	<link rel="icon" type="image/x-icon" href="./images/logo.png">
 	<link rel="stylesheet" href="Plutus.css" type="text/css">

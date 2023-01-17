@@ -35,7 +35,7 @@ public class OpenNewAccount extends HttpServlet {
         String strGender    = request.getParameter("gender");
 
         //maintaining logs
-        File mFile = new File("D:\\Divya\\Program\\Apache Software Foundation\\Tomcat 10.0\\webapps\\OnlineBanking\\Logs\\" + "AdminLogs.txt");
+        File mFile = new File("D:\\Divya\\Program\\Apache Software Foundation\\Tomcat 10.0\\webapps\\Plutus-Bank\\Logs\\" + "AdminLogs.txt");
         FileWriter mFileWriter = new FileWriter(mFile, true);
 
         try {

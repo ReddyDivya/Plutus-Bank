@@ -46,7 +46,7 @@ public class UserDepositAmount extends HttpServlet
         String strDate = simpleDateFormat.format(new Date());
 
         //maintaining logs
-        File mFile = new File("D:\\Divya\\Program\\Apache Software Foundation\\Tomcat 10.0\\webapps\\OnlineBanking\\Logs\\" + "UserLogs.txt");
+        File mFile = new File("D:\\Divya\\Program\\Apache Software Foundation\\Tomcat 10.0\\webapps\\Plutus-Bank\\Logs\\" + "UserLogs.txt");
         FileWriter mFileWriter = new FileWriter(mFile, true);
 
         mFileWriter.append("\n Deposit Amount:  \t"+ strDate);
