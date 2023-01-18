@@ -697,7 +697,8 @@
 		// Variable to store the final csv data
 		var csv_data = [];
 
-		var myTable = document.getElementsByTagName("table")[1];//Statement details table
+		var myTable = document.getElementsByTagName("tbody")[1];//Statement details table
+
 
 		// Get each row data
 		var rows = myTable.getElementsByTagName("tr");
