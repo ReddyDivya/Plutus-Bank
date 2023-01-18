@@ -987,7 +987,21 @@
 	}//fnEditProfile
 
 	$(document).ready(function () {
-		$('#StmtDetailsTbl').DataTable({
+		// $('#StmtDetailsTbl').DataTable({
+		// 	scrollY: 770,
+		// 	paging: false,
+		// 	autoWidth: true,
+		// 	ordering: true,
+		// 	searching: false,
+		// 	"order": [[1, "asc"]],
+		// 	"columnDefs": [
+		// 		{ "orderable": false, "targets": "_all" }
+		// 	]
+		// });
+
+		// $(".dataTables_info, .sorting_desc, .sorting_asc").hide();
+
+		$('#UserDetailsTbl').DataTable({
 			scrollY: 770,
 			paging: false,
 			autoWidth: true,
@@ -998,9 +1012,8 @@
 				{ "orderable": false, "targets": "_all" }
 			]
 		});
-
-		$(".dataTables_info, .sorting_desc, .sorting_asc").hide();
 	});
+
 
 </script>
 
