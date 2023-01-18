@@ -992,10 +992,14 @@
 			paging: false,
 			autoWidth: true,
 			ordering: true,
-			searching: false
+			searching: false,
+			"order": [[1, "asc"]],
+			"columnDefs": [
+				{ "orderable": false, "targets": "_all" }
+			]
 		});
 
-		$(".dataTables_info, .sorting sorting_asc").hide();
+		$(".dataTables_info, .sorting_desc, .sorting_asc").hide();
 	});
 
 </script>
