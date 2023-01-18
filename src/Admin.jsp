@@ -99,22 +99,21 @@
 		<div id="StatementSection" title="Generate Customer Statement" style="display:none;">
 			<form class="card-form">
 				<div class="input">
-					<label class="input-label">Username</label>
-					<input type="text" id="username" name="username" class="input-field" required disabled value='' />
+					<input type="text" id="username" name="username" class="input-field" placeholder="Username" required
+						disabled value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Account Number</label>
-					<input type="text" name="accountnumber" id="accountnumber" class="input-field" required disabled
-						value='' />
+					<input type="text" name="accountnumber" id="accountnumber" placeholder="Account Number"
+						class="input-field" required disabled value='' />
 				</div>
 				<div>
 					<div class="input">
-						<label class="input-label">From</label>
-						<input type="date" id="fromDate" name="fromDate" class="input-field" required value='' />
+						<input type="date" id="fromDate" name="fromDate" placeholder="From Date" class="input-field"
+							required value='' />
 					</div>
 					<div class="input">
-						<label class="input-label">To</label>
-						<input type="date" id="toDate" name="toDate" class="input-field" required value='' />
+						<input type="date" id="toDate" name="toDate" placeholder="To Date" class="input-field" required
+							value='' />
 					</div>
 				</div>
 				<br />
@@ -149,18 +148,16 @@
 		<div id="DepositSection" title="Deposit" style="display:none;">
 			<form class="card-form">
 				<div class="input">
-					<label class="input-label">Username</label>
-					<input type="text" id="deposit-username" name="deposit-username" class="input-field" required
-						disabled value='' />
+					<input type="text" id="deposit-username" name="deposit-username" placeholder="Username"
+						class="input-field" required disabled value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Account Number</label>
-					<input type="text" name="deposit-accountnumber" id="deposit-accountnumber" class="input-field"
-						required disabled value='' />
+					<input type="text" name="deposit-accountnumber" id="deposit-accountnumber"
+						placeholder="Account Number" class="input-field" required disabled value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Amount</label>
-					<input type="text" name="deposit-amount" id="deposit-amount" class="input-field" required />
+					<input type="text" name="deposit-amount" id="deposit-amount" placeholder="Amount"
+						class="input-field" required />
 				</div>
 				<br />
 				<div class="action">
@@ -173,18 +170,16 @@
 		<div id="WithdrawSection" title="Withdraw" style="display:none;">
 			<form class="card-form">
 				<div class="input">
-					<label class="input-label">Username</label>
-					<input type="text" id="withdraw-username" name="withdraw-username" class="input-field" required
-						disabled value='' />
+					<input type="text" id="withdraw-username" name="withdraw-username" placeholder="Username"
+						class="input-field" required disabled value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Account Number</label>
-					<input type="text" name="withdraw-accountnumber" id="withdraw-accountnumber" class="input-field"
-						required disabled value='' />
+					<input type="text" name="withdraw-accountnumber" id="withdraw-accountnumber"
+						placeholder="Account Number" class="input-field" required disabled value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Amount</label>
-					<input type="text" name="withdraw-amount" id="withdraw-amount" class="input-field" required />
+					<input type="text" name="withdraw-amount" id="withdraw-amount" placeholder="Amount"
+						class="input-field" required />
 				</div>
 				<br />
 				<div class="action">
@@ -197,22 +192,20 @@
 		<div id="EditProfileSection" title="Edit Profile" style="display:none;">
 			<form class="card-form">
 				<div class="input">
-					<label class="input-label">Account Number</label>
-					<input type="text" name="cus-accountnumber" id="cus-accountnumber" class="input-field" disabled
+					<input type="text" name="cus-accountnumber" id="cus-accountnumber" placeholder="Account Number"
+						class="input-field" disabled required value='' />
+				</div>
+				<div class="input">
+					<input type="text" id="cus-username" name="cus-username" placeholder="Username" class="input-field"
 						required value='' />
 				</div>
 				<div class="input">
-					<label class="input-label">Username</label>
-					<input type="text" id="cus-username" name="cus-username" class="input-field" required value='' />
+					<input type="text" class="input-field" name="cus-phone" id="cus-phone" placeholder="Phone" value=""
+						maxlength="10" required />
 				</div>
 				<div class="input">
-					<label class="input-label">Phone</label>
-					<input type="text" class="input-field" name="cus-phone" id="cus-phone" value="" maxlength="10"
+					<input type="date" class="input-field" name="cus-DOB" id="cus-DOB" placeholder="DOB" value=""
 						required />
-				</div>
-				<div class="input">
-					<label class="input-label">DOB</label>
-					<input type="date" class="input-field" name="cus-DOB" id="cus-DOB" value="" required />
 				</div>
 				<tr>
 					<td>
@@ -229,20 +222,18 @@
 					</td>
 				</tr>
 				<div class="input">
-					<label class="input-label">Area</label>
-					<input type="text" class="input-field" name="cus-area" id="cus-area" value="" />
+					<input type="text" class="input-field" name="cus-area" id="cus-area" placeholder="Area" value="" />
 				</div>
 				<div class="input">
-					<label class="input-label">City</label>
-					<input type="text" class="input-field" name="cus-city" id="cus-city" value="" />
+					<input type="text" class="input-field" name="cus-city" id="cus-city" placeholder="City" value="" />
 				</div>
 				<div class="input">
-					<label class="input-label">State</label>
-					<input type="text" class="input-field" name="cus-state" id="cus-state" value="" />
+					<input type="text" class="input-field" name="cus-state" id="cus-state" placeholder="State"
+						value="" />
 				</div>
 				<div class="input">
-					<label class="input-label">ZIP</label>
-					<input type="text" class="input-field" name="cus-zip" id="cus-zip" value="" maxlength="6" />
+					<input type="text" class="input-field" name="cus-zip" id="cus-zip" placeholder="ZIP" value=""
+						maxlength="6" />
 				</div>
 				<br />
 				<div class="action">
@@ -697,8 +688,8 @@
 		// Variable to store the final csv data
 		var csv_data = [];
 
+		// var myTable = document.getElementsByTagName("table")[1];//Statement details table
 		var myTable = document.getElementsByTagName("tbody")[1];//Statement details table
-
 
 		// Get each row data
 		var rows = myTable.getElementsByTagName("tr");
