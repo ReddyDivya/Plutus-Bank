@@ -132,7 +132,7 @@
 					</form>
 					<div class="card-info">
 						<hr>
-						<a href="AdminLogin.jsp" class="button">Admin Login</a>
+						<a href="AdminLogin.jsp" class="button">ADMIN LOGIN</a>
 					</div>
 				</div>
 

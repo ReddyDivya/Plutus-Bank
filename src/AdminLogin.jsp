@@ -37,9 +37,10 @@
 							<button type="submit" class="action-button">LOGIN</button>
 						</div>
 					</form>
+
 					<div class="card-info">
-						<p> --------------------- Or ----------------------</p>
-						<a href="UserLogin.jsp" class="button">User Login</a>
+						<hr>
+						<a href="UserLogin.jsp" class="button">USER LOGIN</a>
 					</div>
 				</div>
 			</div>

@@ -53,7 +53,7 @@
 		<!--2. Admin body-->
 		<div class="db-body-main-content" id="DsplyUserDetailsTbl">
 			<input type="text" id="search-input" onKeyUp="fnSearchByName()" placeholder="Search for names.." />
-			<table id="UserDetailsTbl" border="1" style="overflow:scroll">
+			<table id="UserDetailsTbl" border="1">
 				<thead>
 					<tr>
 						<th>Operations</th>
@@ -67,7 +67,7 @@
 						<th>Edit</th>
 					</tr>
 				</thead>
-				<tbody id="UserDetails"></tbody>
+				<tbody id="UserDetails" style="overflow-y:auto;"></tbody>
 			</table>
 
 			<!-- Displaying New account-->

@@ -5,7 +5,6 @@
 	<title>Plutus</title>
 	<link rel="icon" type="image/x-icon" href="./images/logo.png">
 	<link rel="stylesheet" href="Plutus.css" type="text/css">
-	<link rel="stylesheet" href="About.css" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -71,6 +70,27 @@
 						for
 						<span class="bold">Plutus</span>
 						group's universal banking strategy.
+					</p>
+					<p>
+						The issue of universal banking, which in the Indian context meant conversion of long-term
+						lending
+						institutions such as <span class="bold">Plutus</span> into commercial banks. Conversion
+						into a bank offered <span class="bold">Plutus</span> the ability to accept low-cost demand
+						deposits
+						and
+						offer a wider range of products
+						and services, and greater opportunities for earning non-fund based income in the form of banking
+						fees
+						and
+						commissions. After consideration of various corporate structuring alternatives in the context of
+						the
+						emerging competitive scenario in the Indian banking industry, and the move towards universal
+						banking,
+						the
+						managements of <span class="bold">Plutus</span> and <span class="bold">Plutus</span> Bank formed
+						the
+						view
+						that the merger of <span class="bold">Plutus</span>
 					</p>
 				</section>
 
