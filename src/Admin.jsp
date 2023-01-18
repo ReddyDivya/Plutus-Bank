@@ -257,8 +257,6 @@
 </body>
 <script type="text/javascript">
 
-
-
 	fnSendBECall('UserDetails', 'userdetails');
 
 	//Send BE call
@@ -987,21 +985,13 @@
 	}//fnEditProfile
 
 	$(document).ready(function () {
-		// $('#StmtDetailsTbl').DataTable({
-		// 	scrollY: 770,
-		// 	paging: false,
-		// 	autoWidth: true,
-		// 	ordering: true,
-		// 	searching: false,
-		// 	"order": [[1, "asc"]],
-		// 	"columnDefs": [
-		// 		{ "orderable": false, "targets": "_all" }
-		// 	]
-		// });
-
-		// $(".dataTables_info, .sorting_desc, .sorting_asc").hide();
-
-		$('#UserDetailsTbl').DataTable({
+		$('#StmtDetailsTbl').DataTable({
+			dom: 'Bfrtip',
+			buttons: [{
+				extend: 'excelHtml5',
+				autoFilter: true,
+				sheetName: 'Exported data'
+			}],
 			scrollY: 770,
 			paging: false,
 			autoWidth: true,
@@ -1010,8 +1000,22 @@
 			"order": [[1, "asc"]],
 			"columnDefs": [
 				{ "orderable": false, "targets": "_all" }
-			]
+			],
 		});
+
+		$(".dataTables_info, .sorting_desc, .sorting_asc").hide();
+
+		// 	$('#UserDetailsTbl').DataTable({
+		// 		scrollY: 770,
+		// 		paging: false,
+		// 		autoWidth: true,
+		// 		ordering: true,
+		// 		searching: false,
+		// 		"order": [[1, "asc"]],
+		// 		"columnDefs": [
+		// 			{ "orderable": false, "targets": "_all" }
+		// 		]
+		// 	});
 	});
 
 
