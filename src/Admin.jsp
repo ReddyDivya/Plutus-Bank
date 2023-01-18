@@ -257,15 +257,7 @@
 </body>
 <script type="text/javascript">
 
-	$(document).ready(function () {
-		$('#StmtDetailsTbl').DataTable({
-			scrollY: 770,
-			paging: false,
-			autoWidth: true,
-			ordering: true,
-			searching: false,
-		});
-	});
+
 
 	fnSendBECall('UserDetails', 'userdetails');
 
@@ -993,6 +985,18 @@
 			fnSendBECall('UserDetails', 'userdetails');//updating the customer details
 		}
 	}//fnEditProfile
+
+	$(document).ready(function () {
+		$('#StmtDetailsTbl').DataTable({
+			scrollY: 770,
+			paging: false,
+			autoWidth: true,
+			ordering: true,
+			searching: false
+		});
+
+		$(".dataTables_info, .sorting sorting_asc").hide();
+	});
 
 </script>
 
