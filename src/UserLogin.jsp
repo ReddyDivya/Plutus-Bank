@@ -6,6 +6,10 @@
 		<title>Plutus</title>
 		<link rel="icon" type="image/x-icon" href="./images/logo.png">
 		<link rel="stylesheet" href="Plutus.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+		<script type="text/javascript" charset="utf8"
+			src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
 	</head>
 
 	<body>

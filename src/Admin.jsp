@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8"
+		src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
 </head>
 
 <body>
@@ -252,6 +256,16 @@
 	</div>
 </body>
 <script type="text/javascript">
+
+	$(document).ready(function () {
+		$('#StmtDetailsTbl').DataTable({
+			scrollY: 770,
+			paging: false,
+			autoWidth: true,
+			ordering: true,
+			searching: false,
+		});
+	});
 
 	fnSendBECall('UserDetails', 'userdetails');
 

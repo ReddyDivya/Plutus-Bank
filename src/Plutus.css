@@ -73,7 +73,7 @@ tr th {
 
 tbody {
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
 tr:hover {
@@ -103,7 +103,7 @@ tr:hover {
 
     /* Dashboard starts here  */
     .db-container {
-        height: 200%;
+        height: 230%;
         width: 95%;
         /* background-color: var(--c-gray-800); */
         background-color: #14365D;
