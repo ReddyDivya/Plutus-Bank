@@ -36,17 +36,13 @@ public class UserLogin extends HttpServlet {
             //connection
             DBConnection db = new DBConnection();
             db.DBConnection();
-            
-            System.out.println("select * from customers where id =" + dwAccountNum + " and Username='" + strUsername + "' and Password='" + strPassword + "'");
-            
+
             db.rs = db.stmt.executeQuery("select * from customers where id =" + dwAccountNum + " and Username='" + strUsername + "' and Password='" + strPassword + "'");
 
             mFileWriter.append("\n Customer Login:  \t"+new java.util.Date().toString());
             mFileWriter.append("\n***********************************************************");
 
             if (db.rs.next()) {
-
-                
                 session.setAttribute("sess_AccountNum", db.rs.getInt("Id"));
                 session.setAttribute("sess_Username", db.rs.getString("Username"));
                 session.setAttribute("sess_Password", db.rs.getString("Password"));

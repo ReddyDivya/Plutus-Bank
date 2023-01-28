@@ -6,6 +6,11 @@
 		<title>Plutus</title>
 		<link rel="icon" type="image/x-icon" href="./images/logo.png">
 		<link rel="stylesheet" href="Plutus.css" type="text/css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
 		<script type="text/javascript" charset="utf8"
 			src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
@@ -116,7 +121,7 @@
 					<form class="card-form">
 						<div class="input">
 							<input type="text" id="Username" name="Username" placeholder="Username" class="input-field"
-								value="RDivya" required />
+								value="Divya" required />
 						</div>
 						<div class="input">
 							<input type="text" name="accountnumber" id="accountnumber" placeholder="Account Number"
@@ -124,7 +129,7 @@
 						</div>
 						<div class="input">
 							<input type="password" name="password" id="password" placeholder="Password"
-								class="input-field" value="diya123" required />
+								class="input-field" value="Divya123" required />
 						</div>
 						<div id="LoginMsg" style="display:none"></div>
 						<div class="card-info">
@@ -207,7 +212,7 @@
 					}
 					else //fail
 					{
-						document.getElementById("user-login").style.display = "block";
+						// document.getElementById("user-login").style.display = "block";
 					}
 
 					document.getElementById("tile").style.display = "block";//showing details block
@@ -251,8 +256,20 @@
 		//login
 		async function fnUserLogin() {
 
+			if (document.getElementById("Username").value == "" || document.getElementById("accountnumber").value == ""
+				|| document.getElementById("password").value == "") {
+
+				document.getElementById("Username").style.background = "#FF9999";
+				document.getElementById("accountnumber").style.background = "#FF9999";
+				document.getElementById("password").style.background = "#FF9999";
+
+				alert("Please fill all mandatory fields.");
+				document.getElementById("Username").focus();//focusing first form field(Username)
+				return false;
+			}
+
 			//fullname
-			if (document.getElementById("Username").value == "") {
+			else if (document.getElementById("Username").value == "") {
 				document.getElementById("Username").style.background == "#FF9999";
 				alert("Please enter Username.");
 				document.getElementById("Username").focus();
@@ -317,30 +334,15 @@
 						}
 						else //fail
 						{
-							document.getElementById("user-login").style.display = "block";
+							// document.getElementById("user-login").style.display = "block";
 						}
 
 						document.getElementById("tile").style.display = "block";//showing details block
 						document.getElementById("LoginMsg").innerHTML = vResponse;
+
 					}).catch(resp => console.log(resp))
+
 				document.getElementById("LoginMsg").style.display = "block";
-
-				// //changing navbar
-				// document.getElementById("home-db-header-navbar").style.display = "none";
-				// document.getElementById("user-db-header-navbar").style.display = "block";
-
-				// //showing logout info
-				// document.getElementById("LoginOrOut").innerHTML = "Logout";
-				// document.getElementById("LoginOrOut").href = "UserLogout.jsp";
-				// alert('<%=request.getSession().getAttribute("sess_Username")%>');
-				//display customer profile
-				// if ('<%=request.getSession().getAttribute("sess_Username") != null ? request.getSession().getAttribute("sess_Username") : ""%>' != "") {
-
-				// 	//user profile info
-				// 	document.getElementById("user-profile-name").innerHTML = '<%=request.getSession().getAttribute("sess_Username")%>';
-				// 	document.getElementById("user-profile-icon").src = "https://media-exp1.licdn.com/dms/image/C5603AQFDOiY-yy66IQ/profile-displayphoto-shrink_200_200/0/1634569925842?e=1672876800&v=beta&t=XMX9KvSy0GggCnoiQjs53e0oAS77jnzeYZK56Xr5ZFs";
-				// }
-
 			}
 		}//fnUserLogin
 
@@ -847,6 +849,28 @@
 			}
 		}//fnEditProfile
 
+		$(document).ready(function () {
+			//Statement details Table
+			$('#StmtDetailsTbl').DataTable({
+				dom: 'Bfrtip',
+				buttons: [{
+					extend: 'excelHtml5',
+					autoFilter: true,
+					sheetName: 'Exported data'
+				}],
+				scrollY: 700,
+				paging: false,
+				autoWidth: true,
+				ordering: true,
+				searching: false,
+				"order": [[1, "asc"]],
+				"columnDefs": [
+					{ "orderable": false, "targets": "_all" }
+				],
+			});
+
+			$(".dataTables_info, .sorting_desc, .sorting_asc").hide();
+		});
 	</script>
 
 	</html>

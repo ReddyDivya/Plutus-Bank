@@ -82,6 +82,10 @@ tr:hover {
     color: var(--c-gray-900);
 }
 
+table.dataTable thead th,
+table.dataTable thead td {
+    padding-right: 105px;
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -595,7 +599,7 @@ tr:hover {
 
     .card-heading {
         position: absolute;
-        left: 5%;
+        left: -54% !important;
         top: 85%;
         right: 0%;
         font-weight: 400;
@@ -607,7 +611,7 @@ tr:hover {
 
     .card-heading:hover {
         position: absolute;
-        left: 5%;
+        left: -54% !important;
         top: 85%;
         right: 0%;
         font-weight: 400;
@@ -660,10 +664,10 @@ tr:hover {
         padding: 0.5em;
         width: 100%;
         font-weight: 400;
-        background-color: var(--c-gray-300);
+        background-color: #00BFFF;
         border-radius: 6px;
         /* color: var(--c-gray-900); */
-        color: #00BFFF;
+        color: #fff;
         border: 0;
     }
 

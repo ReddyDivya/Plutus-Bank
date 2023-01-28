@@ -184,9 +184,32 @@
 	//add new account
 	function fnAddAccount() {
 
+
+		if (document.getElementById("username").value == "" || document.getElementById("amount").value == ""
+			|| document.getElementById("phone").value == "" || document.getElementById("area").value == ""
+			|| document.getElementById("city").value == "" || document.getElementById("state").value == ""
+			|| document.getElementById("zip").value == "" || document.getElementById("password").value == ""
+			|| document.getElementById("DOB").value == "" || document.getElementById("repassword").value == "") {
+
+			document.getElementById("username").style.background = "#FF9999";
+			document.getElementById("amount").style.background = "#FF9999";
+			document.getElementById("phone").style.background = "#FF9999";
+			document.getElementById("DOB").style.background = "#FF9999";
+			document.getElementById("area").style.background = "#FF9999";
+			document.getElementById("city").style.background = "#FF9999";
+			document.getElementById("state").style.background = "#FF9999";
+			document.getElementById("zip").style.background = "#FF9999";
+			document.getElementById("password").style.background = "#FF9999";
+			document.getElementById("repassword").style.background = "#FF9999";
+
+			alert("Please fill all mandatory fields.");
+			document.getElementById("username").focus();//focusing first form field(username)
+			return false;
+		}
+
 		//username
-		if (document.getElementById("username").value == "") {
-			document.getElementById("username").style.background == "#FF9999";
+		else if (document.getElementById("username").value == "") {
+			document.getElementById("username").style.background = "#FF9999";
 			alert("Please enter username.");
 			document.getElementById("username").focus();
 			return false;
@@ -201,7 +224,7 @@
 
 		//amount
 		if (document.getElementById("amount").value == "") {
-			document.getElementById("amount").style.background == "#FF9999";
+			document.getElementById("amount").style.background = "#FF9999";
 			alert("Please enter amount.");
 			document.getElementById("amount").focus();
 			return false;
@@ -215,7 +238,7 @@
 
 		//phone
 		if (document.getElementById("phone").value == "") {
-			document.getElementById("phone").style.background == "#FF9999";
+			document.getElementById("phone").style.background = "#FF9999";
 			alert("Please enter phone number.");
 			document.getElementById("phone").focus();
 			return false;
@@ -227,9 +250,17 @@
 			return false
 		}
 
+		//dob
+		if (document.getElementById("DOB").value == "") {
+			document.getElementById("DOB").style.background = "#FF9999";
+			alert("Please enter date of birth.");
+			document.getElementById("DOB").focus();
+			return false;
+		}
+
 		//area
 		if (document.getElementById("area").value == "") {
-			document.getElementById("area").style.background == "#FF9999";
+			document.getElementById("area").style.background = "#FF9999";
 			alert("Please enter area.");
 			document.getElementById("area").focus();
 			return false;
@@ -244,7 +275,7 @@
 
 		//city
 		if (document.getElementById("city").value == "") {
-			document.getElementById("city").style.background == "#FF9999";
+			document.getElementById("city").style.background = "#FF9999";
 			alert("Please enter city.");
 			document.getElementById("city").focus();
 			return false;
@@ -259,7 +290,7 @@
 
 		//state
 		if (document.getElementById("state").value == "") {
-			document.getElementById("state").style.background == "#FF9999";
+			document.getElementById("state").style.background = "#FF9999";
 			alert("Please enter state.");
 			document.getElementById("state").focus();
 			return false;
@@ -274,7 +305,7 @@
 
 		//zip
 		if (document.getElementById("zip").value == "") {
-			document.getElementById("zip").style.background == "#FF9999";
+			document.getElementById("zip").style.background = "#FF9999";
 			alert("Please enter zip.");
 			document.getElementById("zip").focus();
 			return false;
@@ -288,7 +319,7 @@
 
 		//password
 		if (document.getElementById("password").value == "") {
-			document.getElementById("password").style.background == "#FF9999";
+			document.getElementById("password").style.background = "#FF9999";
 			alert("Please enter password.");
 			document.getElementById("password").focus();
 			return false;
@@ -307,7 +338,7 @@
 		}
 
 		// //terms and conditions
-		if (document.getElementById.checked == false) {
+		if (document.getElementById("agreeTerms").checked == false) {
 			alert("Please agree to our terms and conditions.");
 			return false;
 		}

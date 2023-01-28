@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="Plutus.css" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
@@ -977,6 +976,7 @@
 	}//fnEditProfile
 
 	$(document).ready(function () {
+		//Statement details Table
 		$('#StmtDetailsTbl').DataTable({
 			dom: 'Bfrtip',
 			buttons: [{
@@ -997,17 +997,18 @@
 
 		$(".dataTables_info, .sorting_desc, .sorting_asc").hide();
 
-		// 	$('#UserDetailsTbl').DataTable({
-		// 		scrollY: 770,
-		// 		paging: false,
-		// 		autoWidth: true,
-		// 		ordering: true,
-		// 		searching: false,
-		// 		"order": [[1, "asc"]],
-		// 		"columnDefs": [
-		// 			{ "orderable": false, "targets": "_all" }
-		// 		]
-		// 	});
+		//Customer details Table
+		$('#UserDetailsTbl').DataTable({
+			scrollY: 770,
+			paging: false,
+			autoWidth: true,
+			ordering: true,
+			searching: false,
+			"order": [[1, "asc"]],
+			"columnDefs": [
+				{ "orderable": false, "targets": "_all" }
+			]
+		});
 	});
 
 
